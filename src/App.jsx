@@ -9,11 +9,11 @@ function App() {
 
   const fetchIp = async ()=>{
     try {
-      const response = await fetch(`http://ip-api.com/json/${ipAddress}`)
+      const response = await fetch(`https://freeipapi.com/api/json/${ipAddress}`)
       const data = await response.json()
       // setInput(data.city)
       // console.log(data)
-      setCity(data.city)
+      setCity(data.cityName)
       // console.log(city)
     } catch (error) {
       console.log(error)
